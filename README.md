@@ -31,7 +31,7 @@
 
 ## Development
 
-Check out our [Development Guide](https://swarmfund.gitbook.io/swarm-js-sdk/docs).
+Check out our [Development Guide](./docs#development-guide).
 
 ## License
 
