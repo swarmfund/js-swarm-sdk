@@ -121,8 +121,8 @@ console.log('Previous page', prevPage.data)
 
 ### Common errors
 
-- [NetworkError](./NetworkError.html)
-- [TimeoutError](./TimeoutError.html)
+- [NetworkError](./NetworkError.html);
+- [TimeoutError](./TimeoutError.html);
 
 ### Wrappers for error responses
 
