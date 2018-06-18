@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>base/operations/manage_asset_builder.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Account.html">Account</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getBalances">getBalances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getDetails">getDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getReferrals">getReferrals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getSigner">getSigner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getSigners">getSigners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Account.html#getSummary">getSummary</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ApiError.html">ApiError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ApiResponse.html">ApiResponse</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ApiServer.html">ApiServer</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BadRequestError.html">BadRequestError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Balances.html">Balances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Balances.html#getAccount">getAccount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Balances.html#getAsset">getAsset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Balances.html#getPage">getPage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Blobs.html">Blobs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Blobs.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Blobs.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Blobs.html#getAll">getAll</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="CallBuilder.html">CallBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#appendAccountId">appendAccountId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#appendUrlSegment">appendUrlSegment</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#delete">delete</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#patch">patch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#post">post</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#withSignature">withSignature</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CallBuilder.html#withTimeout">withTimeout</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="CallBuilder_CallBuilder.html">CallBuilder</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ConflictError.html">ConflictError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Documents.html">Documents</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Documents.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Documents.html#get">get</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Factors.html">Factors</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#changePriority">changePriority</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#createTotpFactor">createTotpFactor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#delete">delete</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#verifyPasswordFactorAndRetry">verifyPasswordFactorAndRetry</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Factors.html#verifyTotpFactorAndRetry">verifyTotpFactorAndRetry</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ForbiddenRequestError.html">ForbiddenRequestError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="HorizonError.html">HorizonError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="HorizonResponse.html">HorizonResponse</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="HorizonServer.html">HorizonServer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="HorizonServer.html#getNetworkDetails">getNetworkDetails</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InternalServerError.html">InternalServerError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Keypair_Keypair.html">Keypair</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="KycEntities.html">KycEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="KycEntities.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="KycEntities.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="KycEntities.html#update">update</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Memo.html">Memo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Memo.html#.hash">hash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Memo.html#.id">id</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Memo.html#.none">none</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Memo.html#.returnHash">returnHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Memo.html#.text">text</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Network_Network.html">Network</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NetworkError.html">NetworkError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NotAllowedError.html">NotAllowedError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NotFoundError.html">NotFoundError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ResourceGroupBase.html">ResourceGroupBase</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ResponseBase.html">ResponseBase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ResponseBase.html#toJSON">toJSON</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ServerBase.html">ServerBase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ServerBase.html#ejectRequestInterceptor">ejectRequestInterceptor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ServerBase.html#ejectResponseInterceptor">ejectResponseInterceptor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ServerBase.html#useRequestInterceptor">useRequestInterceptor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ServerBase.html#useResponseInterceptor">useResponseInterceptor</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ServerBase_ServerBase.html">ServerBase</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ServerErrorBase.html">ServerErrorBase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ServerErrorBase.html#retryRequest">retryRequest</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Swarm.html">Swarm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Swarm.html#ejectWallet">ejectWallet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Swarm.html#useWallet">useWallet</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Swarm.create.html">create</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TFARequiredError.html">TFARequiredError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TimeoutError.html">TimeoutError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Transaction_Transaction.html">Transaction</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TransactionBuilder_TransactionBuilder.html">TransactionBuilder</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Transactions.html">Transactions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Transactions.html#submit">submit</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="UnauthorizedError.html">UnauthorizedError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Users.html">Users</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Users.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Users.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Users.html#getPage">getPage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="VerificationRequiredError.html">VerificationRequiredError</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Wallet.html">Wallet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#.deriveId">deriveId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#.fromEncrypted">fromEncrypted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#.fromRecoverySeed">fromRecoverySeed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#.generate">generate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#encrypt">encrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallet.html#encryptRecoveryData">encryptRecoveryData</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Wallets.html">Wallets</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#changePassword">changePassword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#getKdfParams">getKdfParams</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#recovery">recovery</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#resendEmail">resendEmail</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Wallets.html#verifyEmail">verifyEmail</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#FastSigning">FastSigning</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#Networks">Networks</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">base/operations/manage_asset_builder.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { default as xdr } from '../generated/xdr_generated'
+import isUndefined from 'lodash/isUndefined'
+import { BaseOperation } from './base_operation'
+import { Keypair } from '../keypair'
+import { UnsignedHyper } from 'js-xdr'
+
+export class ManageAssetBuilder {
+  /**
+     * Creates operation to create asset creation request
+     * @param {object} opts
+     *
+     * @param {string} opts.requestID - request ID, if 0 - creates new, updates otherwise
+     * @param {string} opts.code - Asset code
+     * @param {string} opts.preissuedAssetSigner - AccountID of keypair which will sign request for asset to be authrorized to be issued
+     * @param {string} opts.maxIssuanceAmount - Max amount can be issued of that asset
+     * @param {number} opts.policies - Asset policies
+     * @param {string} opts.initialPreissuedAmount - Amount of pre issued tokens available after creation of the asset
+     *
+     * @param {object} opts.details - Additional details about asset
+     * @param {string} opts.details.name - Name of the asset
+     * @param {array}  opts.details.documents - Documents attached to asset
+     * @param {string} opts.details.logo - Asset picture
+     * @param {string} opts.details.logo.key - Key to compose asset picture url
+     * @param {string} opts.details.logo.type - Content type of asset logo
+     * @param {string} opts.details.terms - Asset terms
+     * @param {string} opts.details.terms.type - Content type of terms document
+     * @param {string} opts.details.terms.name - Name of terms document
+     *
+     * @param {string} [opts.source] - The source account for the payment. Defaults to the transaction's source account.
+     *
+     * @returns {xdr.ManageAssetOp}
+     */
+  static assetCreationRequest (opts) {
+    let attrs = ManageAssetBuilder._createUpdateAttrs(opts)
+
+    if (!Keypair.isValidPublicKey(opts.preissuedAssetSigner)) {
+      throw new Error('opts.preissuedAssetSigner is invalid')
+    }
+
+    attrs.preissuedAssetSigner = Keypair
+      .fromAccountId(opts.preissuedAssetSigner)
+      .xdrAccountId()
+
+    if (!BaseOperation.isValidAmount(opts.maxIssuanceAmount, true)) {
+      throw new Error('opts.maxIssuanceAmount is invalid')
+    }
+
+    attrs.maxIssuanceAmount = BaseOperation
+      ._toUnsignedXDRAmount(opts.maxIssuanceAmount)
+
+    if (isUndefined(opts.initialPreissuedAmount)) {
+      opts.initialPreissuedAmount = '0'
+    }
+
+    if (!BaseOperation.isValidAmount(opts.initialPreissuedAmount, true)) {
+      throw new Error('opts.initialPreissuedAmount is invalid')
+    }
+
+    attrs.initialPreissuedAmount = BaseOperation
+      ._toUnsignedXDRAmount(opts.initialPreissuedAmount)
+
+    attrs.ext = new xdr.AssetCreationRequestExt(
+      xdr.LedgerVersion.emptyVersion()
+    )
+
+    let assetCreationRequest = new xdr.AssetCreationRequest(attrs)
+    return ManageAssetBuilder._createManageAssetOp(
+      opts,
+      new xdr.ManageAssetOpRequest.createAssetCreationRequest(
+        assetCreationRequest
+      )
+    )
+  }
+
+  /**
+     * Creates operation to create asset update request
+     * @param {object} opts
+     *
+     * @param {string} opts.requestID - request ID, if 0 - creates new, updates otherwise
+     * @param {string} opts.code - Asset code
+     * @param {number} opts.policies - asset policies
+     *
+     * @param {object} opts.details - Additional details about asset
+     * @param {string} opts.details.name - Name of the asset
+     * @param {string} opts.details.logo - Asset picture
+     * @param {string} opts.details.logo.key - Key to compose asset picture url
+     * @param {string} opts.details.logo.type - Content type of asset logo
+     * @param {string} opts.details.terms - Asset terms
+     * @param {string} opts.details.terms.type - Content type of terms document
+     * @param {string} opts.details.terms.name - Name of terms document
+     *
+     * @param {string} [opts.source] - The source account for the payment. Defaults to the transaction's source account.
+     *
+     * @returns {xdr.ManageAssetOp}
+     */
+  static assetUpdateRequest (opts) {
+    let attrs = ManageAssetBuilder._createUpdateAttrs(opts)
+    attrs.ext = new xdr.AssetUpdateRequestExt(xdr.LedgerVersion.emptyVersion())
+    let assetUpdateRequest = new xdr.AssetUpdateRequest(attrs)
+
+    return ManageAssetBuilder._createManageAssetOp(
+      opts,
+      new xdr.ManageAssetOpRequest.createAssetUpdateRequest(assetUpdateRequest)
+    )
+  }
+
+  /**
+     * Creates operation to cancel asset creation/update request
+     * @param {object} opts
+     * @param {string} opts.requestID - request ID
+     * @param {string} [opts.source] - The source account for the payment. Defaults to the transaction's source account.
+     * @returns {xdr.ManageAssetOp}
+     */
+  static cancelAssetRequest (opts) {
+    let attrs = {
+      ext: new xdr.CancelAssetRequestExt(xdr.LedgerVersion.emptyVersion())
+    }
+    let cancelAssetRequest = new xdr.CancelAssetRequest(attrs)
+
+    return ManageAssetBuilder._createManageAssetOp(
+      opts,
+      new xdr.ManageAssetOpRequest.cancelAssetRequest(cancelAssetRequest)
+    )
+  }
+
+  /**
+     * Creates operation to cancel asset creation/update request
+     * @param {object} opts
+     * @param {string} opts.accountID - accountID to whome rights will be passed
+     * @param {string} opts.code - asset code for which to rights will be passed
+     * @param {string} [opts.source] - The source account for the payment. Defaults to the transaction's source account.
+     * @returns {xdr.ManageAssetOp}
+     */
+  static changeAssetPreIssuer (opts) {
+    if (!Keypair.isValidPublicKey(opts.accountID)) {
+      throw new Error('opts.accountID is invalid')
+    }
+
+    if (isUndefined(opts.code)) {
+      throw new Error('opts.code is invalid - must be string')
+    }
+
+    opts.requestID = '0'
+
+    let attrs = {
+      ext: new xdr.AssetChangePreissuedSignerExt(
+        xdr.LedgerVersion.emptyVersion()
+      ),
+      accountId: Keypair.fromAccountId(opts.accountID).xdrAccountId(),
+      code: opts.code
+    }
+    let changePreissuedSigner = new xdr.AssetChangePreissuedSigner(attrs)
+
+    return ManageAssetBuilder._createManageAssetOp(
+      opts,
+      new xdr.ManageAssetOpRequest.changePreissuedAssetSigner(
+        changePreissuedSigner
+      )
+    )
+  }
+
+  static _getValidDetails (opts) {
+    let details = opts.details
+
+    if (isUndefined(details)) {
+      details = {}
+    }
+
+    if (isUndefined(details.name)) {
+      details.name = ''
+    }
+
+    if (isUndefined(details.terms)) {
+      details.terms = {}
+    }
+
+    if (isUndefined(details.terms.key)) {
+      details.terms.key = ''
+    }
+
+    if (isUndefined(details.terms.type)) {
+      details.terms.type = ''
+    }
+
+    if (isUndefined(details.terms.name)) {
+      details.terms.name = ''
+    }
+
+    if (isUndefined(details.logo)) {
+      details.logo = {}
+    }
+
+    if (isUndefined(details.logo.key)) {
+      details.logo.key = ''
+    }
+
+    if (isUndefined(details.logo.type)) {
+      details.logo.type = ''
+    }
+
+    return {
+      name: details.name,
+      logo: details.logo,
+      terms: details.terms
+    }
+  }
+
+  static _createUpdateAttrs (opts) {
+    if (!BaseOperation.isValidAsset(opts.code)) {
+      throw new Error('opts.code is invalid')
+    }
+
+    if (isUndefined(opts.policies) || opts.policies &lt; 0) {
+      throw new Error('opts.policies must be nonnegative number')
+    }
+
+    let details = ManageAssetBuilder._getValidDetails(opts)
+
+    let attrs = {
+      code: opts.code,
+      policies: opts.policies,
+      details: JSON.stringify(details)
+    }
+
+    return attrs
+  }
+
+  static _createManageAssetOp (opts, request) {
+    if (isUndefined(opts.requestID)) {
+      throw new Error('opts.requestID is invalid')
+    }
+
+    let assetUpdateOp = new xdr.ManageAssetOp({
+      requestId: UnsignedHyper.fromString(opts.requestID),
+      request: request,
+      ext: new xdr.ManageAssetOpExt(xdr.LedgerVersion.emptyVersion())
+    })
+
+    let opAttributes = {}
+    opAttributes.body = xdr.OperationBody.manageAsset(assetUpdateOp)
+    BaseOperation.setSourceAccount(opAttributes, opts)
+    return new xdr.Operation(opAttributes)
+  }
+
+  static manageAssetToObject (result, attrs) {
+    result.requestID = attrs.requestId().toString()
+    result.requestType = attrs.request().switch().name
+    switch (attrs.request().switch()) {
+      case xdr.ManageAssetAction.createAssetCreationRequest():
+      {
+        let request = attrs.request().createAsset()
+        result.code = request.code()
+        result.preissuedAssetSigner = BaseOperation
+          .accountIdtoAddress(request.preissuedAssetSigner())
+        result.policies = request.policies()
+        result.maxIssuanceAmount = BaseOperation
+          ._fromXDRAmount(request.maxIssuanceAmount())
+        result.initialPreissuedAmount = BaseOperation
+          ._fromXDRAmount(request.initialPreissuedAmount())
+        result.details = JSON.parse(request.details())
+        break
+      }
+      case xdr.ManageAssetAction.createAssetUpdateRequest():
+      {
+        let request = attrs.request().updateAsset()
+        result.code = request.code()
+        result.policies = request.policies()
+        result.details = JSON.parse(request.details())
+        break
+      }
+      case xdr.ManageAssetAction.cancelAssetRequest():
+      {
+        // nothing to do here
+        break
+      }
+      case xdr.ManageAssetAction.changePreissuedAssetSigner():
+      {
+        let request = attrs.request().changePreissuedSigner()
+        result.code = request.code()
+        result.accountID = BaseOperation.accountIdtoAddress(request.accountId())
+        break
+      }
+    }
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jun 18 2018 18:34:02 GMT+0300 (FLE Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
