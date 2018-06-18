@@ -27,11 +27,11 @@
     sdk.useWallet(wallet)
     ```
 
-1. Read the [docs](https://swarm.gitlab.io/new-js-sdk/index.html) and tokenize your assets!
+1. Read the [docs](./docs) and tokenize your assets!
 
 ## Development
 
-Check out our [Development Guide](https://swarm.gitlab.io/new-js-sdk/index.html#development-guide).
+Check out our [Development Guide](https://swarmfund.gitbook.io/swarm-js-sdk/docs).
 
 ## License
 

@@ -46,7 +46,7 @@ If you use webpack as your build system you'll need to exclude the optional nati
   ]
 ```
 
-You can also checkout package's [webpack config](https://gitlab.com/swarm/new-js-sdk/blob/master/webpack.config.js).
+You can also checkout package's [webpack config](../webpack.config.js).
 
 #### Prebuilt Minified Scripts
 
