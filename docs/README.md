@@ -26,7 +26,7 @@ There two ways to interact with Swarm platform:
 - By calling REST services(API)
 - By building, signing and submitting blockchain transactions
 
-Every user has a [keypair](./Keypair.html) that is used to authorize requests and sign the blockchain transactions. The keypair public key is used to identify user within the system.
+Every user has a [keypair](./pages/Keypair_Keypair.html) that is used to authorize requests and sign the blockchain transactions. The keypair public key is used to identify user within the system.
 
 ## JavaScript SDK
 
