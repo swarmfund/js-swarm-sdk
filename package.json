@@ -1,7 +1,7 @@
 {
-    "name": "swarm-sdk",
-    "version": "0.0.1",
-    "description": "swarm-sdk is a client-side SDK for Swarm asset tokenization platform.",
+    "name": "tokend-sdk",
+    "version": "0.0.0",
+    "description": "tokend-sdk is a client-side SDK for TokenD asset tokenization platform.",
     "main": "lib/index.js",
     "scripts": {
         "build": "rimraf lib && babel src -d lib --ignore spec.js,test_helpers",
@@ -10,7 +10,9 @@
         "test:browser": "karma start",
         "lint": "eslint ./src --cache --fix",
         "coverage": "nyc mocha --opts ./mocha.opts 'src/**/*.spec.js'",
-        "docs": "rimraf docs/pages && jsdoc -c ./.jsdoc.json"
+        "docs": "rimraf docs/pages && jsdoc -c ./.jsdoc.json",
+        "docs:md": "rimraf docs/markdown && node scripts/jsdoc_to_markdown.js",
+        "prepare": "npm run build & npm run build:browser"
     },
     "husky": {
         "hooks": {
@@ -28,18 +30,18 @@
         "> 1%"
     ],
     "keywords": [
-        "swarm"
+        "tokend"
     ],
     "repository": {
         "type": "git",
-        "url": "https://gitlab.com/swarmfund/new-js-sdk.git"
+        "url": "https://gitlab.com/tokend/new-js-sdk.git"
     },
     "author": "Distributed Lab <contact@distributedlab.com>",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://gitlab.com/swarmfund/new-js-sdk.git/issues"
+        "url": "https://gitlab.com/tokend/new-js-sdk.git/issues"
     },
-    "homepage": "https://gitlab.com/swarmfund/new-js-sdk",
+    "homepage": "https://gitlab.com/tokend/new-js-sdk",
     "devDependencies": {
         "axios-mock-adapter": "^1.15.0",
         "babel-cli": "^6.26.0",
@@ -60,6 +62,7 @@
         "eslint-plugin-standard": "^3.1.0",
         "husky": "^0.15.0-rc.13",
         "jsdoc": "^3.5.5",
+        "jsdoc-to-markdown": "^4.0.1",
         "karma": "^2.0.0",
         "karma-chai": "^0.1.0",
         "karma-chrome-launcher": "^2.2.0",
@@ -72,7 +75,7 @@
         "nyc": "^11.6.0",
         "sinon": "^4.5.0",
         "sinon-chai": "^3.0.0",
-        "webpack": "^4.5.0",
+        "webpack": "^4.11.0",
         "webpack-cli": "^2.0.14"
     },
     "dependencies": {

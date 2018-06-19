@@ -407,7 +407,7 @@ To update the JS wrappers:
 ### Generating Docs
 
 ```
-npm run docs
+npm run docs:md
 ```
 
 ## Troubleshooting
