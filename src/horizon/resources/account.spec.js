@@ -5,7 +5,7 @@ import {
 } from './generic_test_cases.spec'
 
 describe('Account', () => {
-  const sdk = mocks.tokenDSdk()
+  const sdk = mocks.sdk()
   const horizon = sdk.horizon
   const resourceGroup = horizon.account
   const usersAccount = sdk.wallet.accountId

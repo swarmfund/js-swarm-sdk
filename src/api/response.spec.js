@@ -75,7 +75,7 @@ describe('ApiResponse', () => {
     ]
   })
 
-  let sdk = mocks.tokenDSdk()
+  let sdk = mocks.sdk()
   let singleItemResponse
   let collectionResponse
 

@@ -18,7 +18,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | rawResponse | <code>object</code> | <p>Raw axios.js response object.</p> |
-| sdk | [<code>TokenD</code>](#TokenD) | <p>TokenD instance.</p> |
+| sdk | [<code>Swarm</code>](#Swarm) | <p>Swarm instance.</p> |
 
 <a name="ApiResponse+data"></a>
 

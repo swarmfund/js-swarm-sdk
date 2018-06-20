@@ -9,9 +9,9 @@ describe('CallBuilder', () => {
   let sandbox
   let axiosInstance = axios.create()
   let axiosMock = new AxiosMock(axiosInstance)
-  let sdk = mocks.tokenDSdk({ legacySignatures: false })
-  let sdkLegacySignatures = mocks.tokenDSdk({ legacySignatures: true })
-  let noWalletSdk = mocks.tokenDSdk({ noWallet: true })
+  let sdk = mocks.sdk({ legacySignatures: false })
+  let sdkLegacySignatures = mocks.sdk({ legacySignatures: true })
+  let noWalletSdk = mocks.sdk({ noWallet: true })
   let callBuilder
   let noWalletCallBuilder
   let legacySignaturesCallBuilder

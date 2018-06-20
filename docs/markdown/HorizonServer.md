@@ -20,7 +20,7 @@
 
 | Param | Type | Description |
 | --- | --- | --- |
-| sdk | [<code>TokenD</code>](#TokenD) | <p>Parent SDK instance.</p> |
+| sdk | [<code>Swarm</code>](#Swarm) | <p>Parent SDK instance.</p> |
 | serverUrl | <code>string</code> | <p>Horizon server instance URL.</p> |
 | [opts.allowHttp] | <code>boolean</code> | <p>Allow connecting to http servers, default: <code>false</code>. This must be set to false in production deployments!</p> |
 | [opts.proxy] | <code>Object</code> | <p>Proxy configuration. Look <a href="https://github.com/axios/axios#request-config">axios docs</a> for more info</p> |

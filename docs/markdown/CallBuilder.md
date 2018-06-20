@@ -41,7 +41,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | axios | <code>Object</code> | <p>Axios.js instance.</p> |
-| [sdk] | [<code>TokenD</code>](#TokenD) | <p>TokenD SDK instance.</p> |
+| [sdk] | [<code>Swarm</code>](#Swarm) | <p>Swarm SDK instance.</p> |
 
 <a name="CallBuilder+appendUrlSegment"></a>
 

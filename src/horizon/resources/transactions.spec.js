@@ -4,7 +4,7 @@ import { SUBMIT_TRANSACTION_TIMEOUT } from './transactions'
 import { Transaction } from '../../base/transaction'
 
 describe('Transactions', () => {
-  const sdk = mocks.tokenDSdk()
+  const sdk = mocks.sdk()
 
   afterEach(() => {
     sdk.horizon.reset()

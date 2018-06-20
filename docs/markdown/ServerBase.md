@@ -30,7 +30,7 @@ instance and exposes an interface for requests to that instance.</p>
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| sdk | [<code>TokenD</code>](#TokenD) |  | <p>Parent TokenD SDK instance.</p> |
+| sdk | [<code>Swarm</code>](#Swarm) |  | <p>Parent Swarm SDK instance.</p> |
 | serverUrl | <code>string</code> |  | <p>Server url.</p> |
 | [opts] | <code>object</code> |  |  |
 | [opts.allowHttp] | <code>boolean</code> |  | <p>Allow connecting to http servers, default: <code>false</code>. This must be set to false in production deployments!</p> |

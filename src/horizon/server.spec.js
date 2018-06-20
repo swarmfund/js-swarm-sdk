@@ -4,7 +4,7 @@ import { TFARequiredError } from '../api/errors'
 import mocks from '../test_helpers/mock_factory'
 
 describe('HorizonServer', () => {
-  let horizon = mocks.tokenDSdk().horizon
+  let horizon = mocks.sdk().horizon
 
   afterEach(() => {
     horizon.reset()

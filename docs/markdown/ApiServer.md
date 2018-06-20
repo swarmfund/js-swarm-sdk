@@ -22,7 +22,7 @@
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| sdk | [<code>TokenD</code>](#TokenD) |  | <p>Parent SDK instance.</p> |
+| sdk | [<code>Swarm</code>](#Swarm) |  | <p>Parent SDK instance.</p> |
 | serverUrl | <code>string</code> |  | <p>API server URL.</p> |
 | opts | <code>Object</code> |  |  |
 | [opts.allowHttp] | <code>boolean</code> |  | <p>Allow connecting to http servers, default: <code>false</code>. This must be set to false in production deployments!</p> |

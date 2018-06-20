@@ -114,7 +114,7 @@ describe('HorizonResponse', () => {
   })
 
   beforeEach(() => {
-    sdk = mocks.tokenDSdk()
+    sdk = mocks.sdk()
     singleItemResponse = new HorizonResponse(
       { data: cloneDeep(rawSingleItemResponse) },
       sdk

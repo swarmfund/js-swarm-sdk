@@ -26,7 +26,7 @@ There two ways to interact with Swarm platform:
 - By calling REST services(API)
 - By building, signing and submitting blockchain transactions
 
-Every user has a [keypair](./pages/Keypair_Keypair.md) that is used to authorize requests and sign the blockchain transactions. The keypair public key is used to identify user within the system.
+Every user has a [keypair](./markdown/Keypair.md) that is used to authorize requests and sign the blockchain transactions. The keypair public key is used to identify user within the system.
 
 ## JavaScript SDK
 
@@ -72,7 +72,7 @@ import { Swarm } from 'swarm-sdk'
 let sdk = await Swarm.create('https://<swarm-backend-url>')
 ```
 
-You can configure different environment setting such as proxy configuration via [options](./Swarm.create.md).
+You can configure different environment setting such as proxy configuration via [options](./markdown/Swarm.create.md).
 
 ## Response Format
 
@@ -121,12 +121,12 @@ console.log('Previous page', prevPage.data)
 
 ### Common errors
 
-- [NetworkError](./NetworkError.md);
-- [TimeoutError](./TimeoutError.md);
+- [NetworkError](./markdown/NetworkError.md);
+- [TimeoutError](./markdown/TimeoutError.md);
 
 ### Wrappers for error responses
 
-All the error responses subclass [ServerErrorBase](./ServerErrorBase.md) and share the following format:
+All the error responses subclass [ServerErrorBase](./markdown/ServerErrorBase.md) and share the following format:
 
 ```js
 {
@@ -222,24 +222,24 @@ let recoveredWallet = await sdk.api.wallets.recovery(
 
 ### Resources
 
-- [Wallets](./Wallets.md)
-- [Factors](./Factors.md)
-- [Users](./Users.md)
-- [Documents](./Documents.md)
-- [Kyc entities](./KycEntites.md)
-- [Blobs](./Blobs.md)
+- [Wallets](./markdown/Wallets.md)
+- [Factors](./markdown/Factors.md)
+- [Users](./markdown/Users.md)
+- [Documents](./markdown/Documents.md)
+- [Kyc entities](./markdown/KycEntites.md)
+- [Blobs](./markdown/Blobs.md)
 
 ### Errors
 
-- [ApiError](./ApiError.md) - base class for API errors
-- [BadRequestError](./BadRequestError.md)
-- [NotAllowedError](./NotAllowedError.md)
-- [ForbiddenRequestError](./ForbiddenRequestError.md)
-- [TFARequiredError](./TFARequiredError.md)
-- [VerificationRequiredError](./VerificationRequiredError.md)
-- [NotFoundError](./NotFoundError.md)
-- [ConflictError](./ConflictError.md)
-- [InternalServerError](./InternalServerError.md)
+- [ApiError](./markdown/ApiError.md) - base class for API errors
+- [BadRequestError](./markdown/BadRequestError.md)
+- [NotAllowedError](./markdown/NotAllowedError.md)
+- [ForbiddenRequestError](./markdown/ForbiddenRequestError.md)
+- [TFARequiredError](./markdown/TFARequiredError.md)
+- [VerificationRequiredError](./markdown/VerificationRequiredError.md)
+- [NotFoundError](./markdown/NotFoundError.md)
+- [ConflictError](./markdown/ConflictError.md)
+- [InternalServerError](./markdown/InternalServerError.md)
 
 ## Horizon Server
 
@@ -247,19 +247,19 @@ let recoveredWallet = await sdk.api.wallets.recovery(
 
 ### Resources
 
-- [Account](./Account.md)
-- [Balances](./Balances.md)
-- [Signers](./Signers.md)
-- [Transactions](./Transactions.md)
+- [Account](./markdown/Account.md)
+- [Balances](./markdown/Balances.md)
+- [Signers](./markdown/Signers.md)
+- [Transactions](./markdown/Transactions.md)
 
 ### Errors
 
-- [HorizonError](./HorizonError.md) - base class for Horizon errors
-- [BadRequestError](./BadRequestError.md)
-- [UnauthorizedError](./UnauthorizedError.md)
-- [TFARequiredError](./TFARequiredError.md)
-- [NotFoundError](./NotFoundError.md)
-- [InternalServerError](./InternalServerError.md)
+- [HorizonError](./markdown/HorizonError.md) - base class for Horizon errors
+- [BadRequestError](./markdown/BadRequestError.md)
+- [UnauthorizedError](./markdown/UnauthorizedError.md)
+- [TFARequiredError](./markdown/TFARequiredError.md)
+- [NotFoundError](./markdown/NotFoundError.md)
+- [InternalServerError](./markdown/InternalServerError.md)
 
 ## Two Factor Auth
 
@@ -292,7 +292,7 @@ sdk.api.useResponseInterceptor(
 Blockhain transactions must have:
 
 - Source - user's account ID
-- One or more [operations](./Operations.md)
+- One or more [operations](./markdown/Operations.md)
 - User's signature
 
 ### Building and signing

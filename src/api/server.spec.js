@@ -4,7 +4,7 @@ import * as horizonErrors from '../horizon/errors'
 import mocks from '../test_helpers/mock_factory'
 
 describe('ApiServer', () => {
-  let api = mocks.tokenDSdk().api
+  let api = mocks.sdk().api
 
   afterEach(() => {
     api.reset()

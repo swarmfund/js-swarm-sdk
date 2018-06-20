@@ -5,7 +5,7 @@ import {
 } from './generic_test_cases.spec'
 
 describe('Balances', () => {
-  const sdk = mocks.tokenDSdk()
+  const sdk = mocks.sdk()
   const asset = 'USD'
   const account = 'GB65IHVVJOGUYKZLHT3GAZOWHCBMZLQLDJAWXJM5LUXI35LNAHHBQUKB'
   const resourceGroup = sdk.horizon.balances

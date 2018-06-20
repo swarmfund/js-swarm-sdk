@@ -2,7 +2,7 @@ import axios from 'axios'
 import AxiosMock from 'axios-mock-adapter'
 import { Keypair } from '../base'
 import { Wallet } from '../wallet'
-import { TokenD } from '../tokend_sdk'
+import { Swarm } from '../sdk'
 
 export default class Mocks {
   static axios () {
@@ -20,8 +20,8 @@ export default class Mocks {
     return new Wallet(email, keypair, accountId, walletId)
   }
 
-  static tokenDSdk ({ noWallet = false, legacySignatures = false } = {}) {
-    let sdk = new TokenD('https://example.com', { legacySignatures })
+  static sdk ({ noWallet = false, legacySignatures = false } = {}) {
+    let sdk = new Swarm('https://example.com', { legacySignatures })
     Mocks._mockApiServer(sdk.api)
     Mocks._mockHorizonServer(sdk.horizon)
 

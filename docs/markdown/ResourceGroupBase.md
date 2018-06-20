@@ -13,5 +13,5 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | server | [<code>ServerBase</code>](#ServerBase) | <p>A server instance to which this resource group belongs.</p> |
-| sdk | [<code>TokenD</code>](#TokenD) | <p>SDK instance.</p> |
+| sdk | [<code>Swarm</code>](#Swarm) | <p>SDK instance.</p> |
 

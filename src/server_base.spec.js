@@ -6,7 +6,7 @@ import { ServerBase } from './server_base'
 
 describe('ServerBase', () => {
   let server
-  let sdk = mocks.tokenDSdk()
+  let sdk = mocks.sdk()
 
   const url = 'https://fizz.buzz'
 
