@@ -1,4 +1,4 @@
-# Swarm JS SDK
+# JS SWARM SDK
 
 ## Overview
 
