@@ -226,7 +226,7 @@ let recoveredWallet = await sdk.api.wallets.recovery(
 - [Factors](./markdown/Factors.md)
 - [Users](./markdown/Users.md)
 - [Documents](./markdown/Documents.md)
-- [Kyc entities](./markdown/KycEntites.md)
+- Kyc entities
 - [Blobs](./markdown/Blobs.md)
 
 ### Errors
