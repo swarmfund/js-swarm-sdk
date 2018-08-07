@@ -72,7 +72,7 @@ import { Swarm } from 'swarm-sdk'
 let sdk = await Swarm.create('https://<swarm-backend-url>')
 ```
 
-You can configure different environment setting such as proxy configuration via [options](./markdown/Swarm.create.md).
+You can configure different environment setting such as proxy configuration via [options](./markdown/Swarm.md).
 
 ## Response Format
 
