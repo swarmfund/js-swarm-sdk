@@ -249,7 +249,6 @@ let recoveredWallet = await sdk.api.wallets.recovery(
 
 - [Account](./markdown/Account.md)
 - [Balances](./markdown/Balances.md)
-- [Signers](./markdown/Signers.md)
 - [Transactions](./markdown/Transactions.md)
 
 ### Errors
