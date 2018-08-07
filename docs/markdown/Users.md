@@ -40,8 +40,9 @@
 | [accountId] | <code>string</code> | <p>Other user's account.</p> |
 
 <p>An example to get the accountId</p>
-<p> let accountID = sdk.wallet.accountId </p>
-
+```js
+let accountID = sdk.wallet.accountId </p>
+```
 <a name="Users+create"></a>
 
 ### users.create([accountId]) ⇒ <code>Promise</code>
