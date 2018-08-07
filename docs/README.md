@@ -291,7 +291,7 @@ sdk.api.useResponseInterceptor(
 Blockhain transactions must have:
 
 - Source - user's account ID
-- One or more [operations](./markdown/Operations.md)
+- One or more operations
 - User's signature
 
 ### Building and signing
