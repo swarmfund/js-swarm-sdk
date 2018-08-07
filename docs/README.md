@@ -69,7 +69,7 @@ To get started create a Swarm SDK instance:
 ```js
 import { Swarm } from 'swarm-sdk'
 
-let sdk = await Swarm.create('https://<swarm-backend-url>')
+let sdk = await Swarm.create('https://api-stage.swarm.fund')
 ```
 
 You can configure different environment setting such as proxy configuration via [options](./markdown/Swarm.md).
