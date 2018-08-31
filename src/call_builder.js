@@ -4,7 +4,7 @@ import { isString, isNumber, isArray } from 'lodash'
 
 const SIGNATURE_VALID_SEC = 60
 const REQUEST_TARGET_HEADER = '(request-target)'
-const SIGNED_HEADERS = [REQUEST_TARGET_HEADER, 'date']
+const SIGNED_HEADERS = [REQUEST_TARGET_HEADER]
 
 /**
  * Creates a new {@link CallBuilder}.
@@ -92,8 +92,10 @@ export class CallBuilder {
    */
   withSignature (wallet) {
     this._wallet = wallet || this._sdk.wallet
+
     if (!this._wallet) {
-      throw new Error('A wallet is required for this request.')
+      console.warn('Skipping signing the request cause no _wallet instance was found. Please re-check if it is an expected behaviour')
+      return this
     }
 
     this._authRequired = true
@@ -216,10 +218,7 @@ export class CallBuilder {
     if (this._sdk.legacySignatures) {
       this._signRequestLegacy(config)
     } else {
-      let date = new Date(this._getTimestamp() * 1000).toUTCString()
-      config.headers = config.headers
-        ? Object.assign(config.headers, { date })
-        : { date }
+      config.headers = config.headers || {}
 
       let digest = hash(this._requestDigest(config))
       let signature = this._wallet.keypair.sign(digest).toString('base64')
