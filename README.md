@@ -17,7 +17,7 @@
     ```js
     import { Swarm } from 'swarm-sdk'
 
-    let sdk = await Swarm.create('https://backend.swarm.com')
+    let sdk = await Swarm.create('https://api-stage.swarm.fund')
     ```
 
 1. Grab your Swarm wallet:
